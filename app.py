@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the CSV file into a pandas DataFrame
-anime_data = pd.read_csv("C:\\Users\\abhi2\\Downloads\\Anime.csv")
+anime_data = pd.read_csv("Anime.csv")
 
 # Clean the data: Remove rows with missing values and unnecessary columns
 anime_data.dropna(subset=['Tags', 'Rating'], inplace=True)
